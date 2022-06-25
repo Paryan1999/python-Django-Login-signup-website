@@ -1,0 +1,16 @@
+<form> 
+{% for x in data %}
+
+
+
+<tr>
+    
+    <td>{{x.name}}</td>
+
+    <td>{{x.address}}</td>
+    <td><img src="{{x.p_img.url}}">
+    <a href="{%url 'edit' x.id%}">EDIT</a></td>
+    </tr>
+{% endfor %}
+
+</form>

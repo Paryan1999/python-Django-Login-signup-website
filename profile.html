@@ -1,0 +1,10 @@
+<!-- {% load static %} -->
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{show.as_p}}
+    <button type="submit">Submit</button>
+    <a href="{% url 'so'%}"> Back</a>
+</form>
+    {% for msg in messages %}
+    {{msg}}
+    {% endfor %}
